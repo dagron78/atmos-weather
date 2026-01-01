@@ -20,7 +20,20 @@ Atmos is a premium, ad-free, open-source weather application built for Android (
 - **API**: [Open-Meteo](https://open-meteo.com/) (Free, No Key Required)
 - **Deployment**: GitHub Pages (via Actions)
 
+## Installation
+
+**No App Store needed.** This is a Progressive Web App (PWA).
+
+### Android
+1. Open [https://dagron78.github.io/atmos-weather](https://dagron78.github.io/atmos-weather) in **Chrome**.
+2. Tap the menu (⋮) > **Install App** (or "Add to Home Screen").
+
+### iOS
+1. Open the link in **Safari**.
+2. Tap **Share** > **Add to Home Screen**.
+
 ## Run Locally
+
 
 1. Clone the repo:
    ```bash

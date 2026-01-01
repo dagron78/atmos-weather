@@ -1,16 +1,48 @@
-# React + Vite
+# Atmos Weather 🌤️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Live Demo:** [https://dagron78.github.io/atmos-weather](https://dagron78.github.io/atmos-weather)
 
-Currently, two official plugins are available:
+Atmos is a premium, ad-free, open-source weather application built for Android (via PWA) and the web. It uses **Open-Meteo** for accurate, real-time weather data API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **🚫 Ad-Free**: No distractions, just weather.
+- **📱 PWA Ready**: Installable on Android/iOS. Works offline-first.
+- **🌍 Search**: Find weather for any city globally.
+- **📍 Auto-Location**: Detects your city automatically.
+- **💾 Save Default**: Pin your favorite location to load instantly.
+- **🌥️ Hourly Forecast**: 24-hour horizontal scroll view.
+- **📅 7-Day Forecast**: Weekly outlook.
 
-## React Compiler
+## Tech Stack
+- **Framework**: [React 19](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Styling**: [TailwindCSS v4](https://tailwindcss.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **API**: [Open-Meteo](https://open-meteo.com/) (Free, No Key Required)
+- **Deployment**: GitHub Pages (via Actions)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Run Locally
 
-## Expanding the ESLint configuration
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/dagron78/atmos-weather.git
+   cd atmos-weather
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start dev server:
+   ```bash
+   npm run dev
+   ```
+
+4. **Mobile Testing**:
+   Run this to expose the server to your local network (Wi-Fi):
+   ```bash
+   npm run dev:host
+   ```
+
+## License
+MIT

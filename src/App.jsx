@@ -19,10 +19,15 @@ function App() {
     // Check localStorage first
     const saved = localStorage.getItem('atmos_default_location');
     if (saved) {
-      const parsed = JSON.parse(saved);
-      setSavedLocation(parsed);
-      loadWeather(parsed.lat, parsed.lon, parsed.name);
-      return;
+      try {
+        const parsed = JSON.parse(saved);
+        setSavedLocation(parsed);
+        loadWeather(parsed.lat, parsed.lon, parsed.name);
+        return;
+      } catch (e) {
+        console.error("Failed to parse saved location", e);
+        localStorage.removeItem('atmos_default_location');
+      }
     }
 
     // Default to New York for demo if geolocation fails or init

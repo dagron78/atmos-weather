@@ -18,6 +18,8 @@ export default defineConfig({
         theme_color: '#0f172a',
         background_color: '#0f172a',
         display: 'standalone',
+        start_url: '/atmos-weather/',
+        scope: '/atmos-weather/',
         icons: [
           {
             src: 'pwa-192x192.png',
@@ -36,6 +38,12 @@ export default defineConfig({
             purpose: 'any maskable'
           }
         ]
+      },
+      workbox: {
+        cleanupOutdatedCaches: true,
+        clientsClaim: true,
+        skipWaiting: true,
+        globPatterns: ['**/*.{js,css,html,ico,png,svg}']
       }
     }),
   ],
